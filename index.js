@@ -6,7 +6,7 @@ app.use(express.json())
 const bodyparser = require('body-parser');
 const router = require("./routes/details");
 const { mongo } = require('mongoose');
-mongoose.connect("mongodb://localhost/StudentData", ()=>{
+mongoose.connect("mongodb://localhost:27017/StudentData", ()=>{
     console.log("connected to db")
 })
 
